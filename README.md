@@ -7,3 +7,6 @@ Merkle trees are useful in distributed systems where same data should exist in m
 Merkle trees can be used to check inconsistencies.
 Apache Cassandra uses Merkle trees to detect inconsistencies between replicas of entire databases.
 It is used in bitcoin and blockchain.
+Merkle trees are made by hashing pairs of nodes repeatedly until only one hash remains; this hash is known as the Merkle Root or the Root Hash.
+They're built from the bottom, using Transaction IDs, which are hashes of individual transactions. 
+Each non-leaf node is a hash of its previous hash, and every leaf node is a hash of transactional data.
